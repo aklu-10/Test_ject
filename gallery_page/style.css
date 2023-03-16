@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    font-size:80%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp_container
+{
+    width:360px;
+    position: relative;
+    box-shadow: 0px -2px 2px lightgray;
+    padding-bottom:40px;
+}
+
+
+.temp_container .label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    posititon: relative;
+    margin-bottom:40px;
+    background:url('../assets/22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.temp_container .label h1
+{
+    font-size:1.5rem;
+    font-weight:900;
+}
+
+.temp_container .label .arrow
+{
+    position:absolute;
+    top:30px;
+    left:20px;
+    font-size:1.5rem;
+}
+
+.temp_container .galleryContainer
+{
+    width:100%;
+    padding:10px;
+}
+
+.temp_container .galleryContainer h3
+{
+    font-size:1.4rem;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+
+.temp_container .galleryContainer .images
+{
+
+}
+
+.temp_container .galleryContainer .images .imageSets
+{
+    margin-top:8px;
+    display:flex;
+    gap:25px;
+    overflow:auto;
+    scroll-snap-type:x mandatory;
+    width:100%;
+}
+
+.temp_container .galleryContainer .images .imageSets::-webkit-scrollbar
+{
+    display:none;
+}
+
+
+.temp_container .galleryContainer .images .imageSets img
+{
+    width:250px;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+    scroll-snap-align:center;
+}
+
+.temp_container .galleryContainer .videos
+{
+    margin-top:50px;
+}
+
+.temp_container .galleryContainer .videos .videoSets
+{
+
+}
+
+.temp_container .galleryContainer .videos .videoSets .videoItem
+{
+    
+}
+
+.temp_container .galleryContainer .videos .videoSets .videoItem video
+{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    margin:9px 0;
+    border-radius:8px;
+}
+
+@media (max-width:426px)
+{
+    .temp_container
+    {
+        width:100vw;
+    }
+
+}

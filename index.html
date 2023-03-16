@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="temp_container">
+
+        <a href="tel:+919451081812" id="phone_link" style="text-decoration:none;">
+            <div class="annoucement">
+                <i class="fa-solid fa-phone"></i>
+                <p>Call Now</p>
+            </div>
+        </a>
+
+        <div class="buss_data">
+            
+            <div class="buss_logo">
+                <div class="loading">
+                    <span></span>
+                </div>
+                <img class="business_logo" src="../assets/demo.png">
+            </div>
+    
+            <div class="buss_context">
+                
+                <div class="buss_head">
+                    <div class="leftContext">
+                        <h1 class="business_name">InfoTech Biosys</h1>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Dhawan, Deva Road, Lucknow</p>
+                    </div>
+                    <div class="rightContext">
+                        <div class="cta likes">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count_likes">0</span>
+                        </div>
+                        <div class="cta views">
+                            <i class="fa-solid fa-eye"></i>
+                            <span class="count_views">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="founder">
+                    <p>Founder</p>
+                    <p class="founder_name">Alexandra Ramson</p>
+                </div>
+
+                <div class="desc">
+                    <p>Description</p>
+                    <p class="business_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nihil fuga cum quos hic nostrum voluptatem autem sequi, voluptates adipisci non asperiores id rem inventore? In sequi omnis laborum voluptates?</p>
+                </div>
+
+                <div class="socials">
+
+                    <a class="whatsapp_link" href="" style="text-decoration: none;">
+                        <div class="social_item">
+                            <i class="fa-brands fa-whatsapp" style="color:#6ECD79;"></i>
+                            <p>Whatsapp</p>
+                        </div>
+                    </a>
+                    
+                    <a class="call_link" href="" style="text-decoration: none;">
+                        <div class="social_item">
+                            <i class="fa-solid fa-phone" style="color:#1DC7D9;"></i>
+                            <p>Call</p>
+                        </div>
+                    </a>
+                    
+                    <a class="location_link" href="" style="text-decoration: none;">
+                        <div class="social_item">
+                            <i class="fa-solid fa-location-dot" style="color:#FF435E;"></i>
+                            <p>Location</p>
+                        </div>
+                    </a>
+
+                    <a class="email_link" href="" style="text-decoration: none;">
+                        <div class="social_item">
+                            <i class="fa-solid fa-envelope" style="color:#FB7115;"></i>
+                            <p>Email</p>
+                        </div>
+                    </a>
+
+                    <a class="website_link" href="" style="text-decoration: none;">
+                        <div class="social_item">
+                            <i class="fa-solid fa-globe" style="color:#0D2AC9;"></i>
+                            <p>Website</p>
+                        </div>
+                    </a>
+
+                </div>
+       
+            </div>            
+
+        </div>
+        
+        <a href="#" style="margin-right:10px;">Home</a>
+        <a href="../services_page/index.html" style="margin-right:10px;">Services</a>
+        <a href="../shop_page/index.html" style="margin-right:10px;">Shop</a>
+        <a href="../gallery_page/index.html" style="margin-right:10px;">Gallery</a>
+        <a href="../about_page/index.html" style="margin-right:10px;">About</a>
+
+    </div>   
+
+
+    <script>
+
+        let logo = document.querySelector(".business_logo");
+        let loading = document.querySelector(".loading");
+
+        logo.onload = ()=>
+        {
+            loading.style.display="none";
+        }
+
+    </script>
+
+</body>
+</html>

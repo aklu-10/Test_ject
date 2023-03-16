@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="temp_container">
+
+        <a class="label" href="../index.html" style="text-decoration: none;">
+            <i class="fa-light fa-arrow-left fa-solid arrow"></i>
+            <h1>ABOUT</h1>
+        </a>
+
+        <div class="buss_details">
+
+            <div class="buss_data">
+                <h1 class="business_name">InfoTech Biosys</h1>
+                <div class="links_data">
+
+                    <div class="links_item">
+                        <i class="fa-solid fa-phone" style="color:#1DC7D9;"></i>
+                        <p class="vphone">+919451081812</p>
+                    </div>
+
+                    <div class="links_item">
+                        <i class="fa-solid fa-envelope" style="color:#FB7115;"></i>
+                        <p class="vemail">abc@mail.com</p>
+                    </div>
+
+                    <div class="links_item">
+                        <i class="fa-solid fa-globe" style="color:#0D2AC9;"></i>
+                        <p class="vwebsite">www.infotech.com</p>
+                    </div>
+
+                    <div class="links_item">
+                        <i class="fa-solid fa-location-dot" style="color:#FF435E;"></i>
+                        <p class="vlocation">somewherelld</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="buss_logo">
+                <img class="business_logo" src="../assets/2.jpg">
+                <h4 class="foundername">Alexandra Ramson</h4>
+                <p class="positionInCOM">CEO at InfoTech Biosys</p>
+            </div>
+        </div>
+    
+        <div class="dropdown_context">
+
+            <div class="ditem">
+                <div class="head" onclick="showContext(event)">
+                    <h3 class="ditem_head">Description</h3>
+                    <i class="fa-solid fa-angle-up dropdownarrow"></i>
+                </div>
+                <p class="ditem_context">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam porro eius unde dolorum exercitationem suscipit harum nemo magnam soluta, sed ea magni cum facere voluptas ad non distinctio, fuga labore?</p>
+            </div>
+
+        </div>
+
+        <div class="btnGroup">
+            <a class="active getInTouch" href="">GET IN TOUCH</a>
+            <a class="explore" href="">EXPLORE</a>
+        </div>
+
+    </div>   
+
+
+
+
+
+    <script>
+
+        function showContext(e)
+        {
+            let para, dropdownarrow;
+
+            if(e.target.classList[0]=='head'){
+
+                para=e.target.nextElementSibling;
+                dropdownarrow=e.target.children[1];
+            }
+
+            else{
+
+                para=e.target.parentElement.nextElementSibling;
+                dropdownarrow=e.target.parentElement.children[1];
+            }
+            
+            dropdownarrow.style.transform=dropdownarrow.style.transform!="rotate(0deg)"?"rotate(0deg)":"rotate(180deg)";
+
+            para.style.height=para.style.height!="0px"?"0px":"initial";
+
+        }
+
+        function closeAllContext()
+        {
+            let items=document.querySelectorAll(".ditem");
+
+            for(let item of items)
+            {
+                item.children[1].style.height="0px";
+            }
+
+        }
+
+        closeAllContext();
+
+
+        function addDropDownContext()
+        {
+            let context=`<div class="ditem">
+                <div class="head" onclick="showContext(event)">
+                    <h3 class="ditem_head">Description</h3>
+                    <i class="fa-solid fa-angle-up dropdownarrow"></i>
+                </div>
+                <p class="ditem_context">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam porro eius unde dolorum exercitationem suscipit harum nemo magnam soluta, sed ea magni cum facere voluptas ad non distinctio, fuga labore?</p>
+            </div>`;
+
+            let container = document.querySelector(".dropdown_context");
+
+            container.insertAdjacentHTML('beforeend',context);
+        closeAllContext();
+
+        }
+
+    </script>
+
+</body>
+</html>

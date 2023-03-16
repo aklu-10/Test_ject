@@ -1,0 +1,38 @@
+
+.menus
+{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#3B75D1;
+    height:50px;
+}
+
+.menus nav
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.menus nav a
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    padding:8px;
+    color:white;
+}
+
+.menus nav a i
+{
+    font-size:17px;
+    padding:2px 0;
+}
+
+.menus nav a p
+{
+    font-weight:600;
+}

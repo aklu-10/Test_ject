@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    font-size:80%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp_container
+{
+    width:360px;
+    position: relative;
+    box-shadow: 0px -2px 2px lightgray;
+
+}
+
+.temp_container .annoucement
+{
+    width:100%;
+    height: 35px;
+    background:#3B75D1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.temp_container .annoucement i
+{
+    display:block;
+    padding:5px;
+    margin-right:5px;
+    background:white;
+    color:#3B75D1;
+    font-size:.9rem;
+    border-radius: 50%;
+}
+
+.temp_container .annoucement p
+{
+    font-size: 1rem;
+}
+
+.temp_container .buss_data
+{
+    position: relative;
+}
+
+.temp_container .buss_logo
+{
+    width:100%;
+    height:300px;
+    position:relative;
+}
+
+.temp_container .buss_logo .loading
+{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.8);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.temp_container .buss_logo .loading span
+{
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation:roto 2s linear infinite;
+}
+
+@keyframes roto
+{
+    from
+    {
+        transform:rotate(0deg);
+    }
+
+    to
+    {
+        transform:rotate(360deg);
+    }
+}
+
+
+.temp_container .buss_logo img
+{
+    width: 100%;
+    height:100%;
+    object-fit: scale-down;
+}
+
+.temp_container .buss_context
+{
+    width:98%;
+    height:max-content;
+    border-radius:10px;
+    box-shadow:0 0 4px lightgray;
+    background:white;
+    z-index:2;
+    padding:15px;
+    margin:auto;
+    position:relative;
+    margin-bottom:10px;
+}
+
+.temp_container .buss_context .buss_head
+{
+    height:20%;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temp_container .buss_context .buss_head .leftContext
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width:70%;
+}
+
+
+.temp_container .buss_context .buss_head .leftContext h1
+{
+    font-size:1.3rem;
+    word-break:break-word;
+}
+
+.temp_container .buss_context .buss_head .leftContext p
+{
+    font-size:.88rem;
+    font-weight:300;
+    word-break:break-word;
+
+}
+.temp_container .buss_context .buss_head .leftContext p i
+{
+    color:rgba(0,0,0,.3);
+}
+
+
+.temp_container .buss_context .buss_head .rightContext
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60px;
+}
+
+.temp_container .buss_context .buss_head .rightContext .cta
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temp_container .buss_context .buss_head .rightContext .cta i
+{
+    font-size:1.5rem;
+}
+
+.temp_container .buss_context .buss_head .rightContext .likes i
+{
+    color:#F54F65;
+}
+
+.temp_container .buss_context .buss_head .rightContext .views i
+{
+    color:#3B75D1;
+}
+
+
+.temp_container .buss_context .buss_head .rightContext .cta span
+{
+    font-size:.88rem;
+    font-weight:900;
+    color:rgba(0,0,0,.7);
+
+}
+
+.temp_container .buss_context .founder
+{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 0;
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.temp_container .buss_context .founder p:nth-child(1)
+{
+    font-weight:600;
+}
+
+.temp_container .buss_context .founder p:nth-child(2)
+{
+    width:50%;
+    word-break:break-all;
+    text-align:right;
+}
+
+
+.temp_container .buss_context .desc
+{
+    padding:15px 0;
+}
+
+.temp_container .buss_context .desc p:nth-child(1)
+{
+    font-weight:600;
+    padding-bottom:5px;
+}
+
+.temp_container .buss_context .desc p:nth-child(2)
+{
+    word-break: break-all;
+}
+
+.temp_container .buss_context .socials
+{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid rgba(0,0,0,.1);
+    flex-wrap:wrap;
+}
+
+.temp_container .buss_context .socials .social_item
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding-top:20px;
+
+}
+
+.temp_container .buss_context .socials .social_item i
+{
+    font-size:1.6rem;
+    padding:5px;
+}
+
+.temp_container .buss_context .socials .social_item p
+{
+    font-size:.88rem;
+}
+
+
+.temp_container .buss_data .share
+{
+    padding:8px 15px;
+    margin:auto;
+    display:block;
+    background:#3B75D1;
+    color:white;
+    border:none;
+    font-size:1rem;
+    border-radius:5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.temp_container .buss_data .share:hover
+{
+    opacity:.9;
+}
+
+
+.temp_container .buss_data .share i
+{
+    margin-right:5px;
+}
+
+@media (max-width:426px)
+{
+    .temp_container
+    {
+        width:100vw;
+    }
+
+}

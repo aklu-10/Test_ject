@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    font-size:80%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp_container
+{
+    width:360px;
+    position: relative;
+    box-shadow: 0px -2px 2px lightgray;
+    padding-bottom:40px;
+}
+
+
+.temp_container .label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    posititon: relative;
+    margin-bottom:40px;
+    background:url('../assets/22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.temp_container .label h1
+{
+    font-size:1.5rem;
+    font-weight:900;
+}
+
+.temp_container .label .arrow
+{
+    position:absolute;
+    top:30px;
+    left:20px;
+    font-size:1.5rem;
+}
+
+.temp_container .productContainer
+{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:5px;
+}
+
+.temp_container .productContainer .productItem 
+{
+    width:160px;
+    position:relative;
+    margin-top:20px;
+    box-shadow:0 0 2px lightgray;
+    border-radius:8px;
+    padding:10px;
+}
+
+.temp_container .productContainer .productItem img
+{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+}
+
+.temp_container .productContainer .productItem .buy
+{
+    position:absolute;
+    top:5px;
+    right:5px;
+    z-index:10;
+    background:white;
+    padding:10px;
+    border-radius:50%;
+    color:black;
+    box-shadow:0 0 2px gray;
+}
+
+.temp_container .productContainer .productItem .context
+{
+    display:flex;
+    justify-content:space-between;
+}
+
+.temp_container .productContainer .productItem .context h5
+{
+    font-size:1rem;
+    font-weight:900;
+}
+
+.temp_container .productContainer .productItem .context ins,
+.temp_container .productContainer .productItem .context del
+{
+    font-size:.9rem;
+}
+
+@media (max-width:426px)
+{
+    .temp_container
+    {
+        width:100vw;
+    }
+
+}
